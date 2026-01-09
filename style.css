@@ -1,6 +1,4 @@
-/* =========================================================
-   GLOBAL RESET
-========================================================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +6,12 @@
   font-family: "Inter", sans-serif;
 }
 
-/* =========================================================
-   NAVBAR
-========================================================= */
+/* NAVBAR*/
 
 /* main nav wrapper */
 .main-nav{
   width: 100%;
   background-color: #ffffff;
-  border-bottom: 1px solid #eeeeee;
 }
 
 /* navbar container */
@@ -48,14 +43,12 @@
   font-size: 16px;
   font-weight: 500;
   color: #001931;
-  transition: 0.2s;
 }
-
 .nav-menu li a:hover{
   color: #30B868;
 }
 
-/* call to action button */
+/*  button */
 .btn-primary{
   padding: 12px 20px;
   background-color: #30B868;
@@ -73,9 +66,7 @@
 }
 
 
-/* =========================================================
-   HERO SECTION
-========================================================= */
+/* HERO SECTION*/
 
 .hero-section{
   width: 100%;
@@ -169,6 +160,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 120px 0;
 }
 
@@ -190,7 +182,7 @@
 }
 
 .notes-header p{
-  font-size: 18px;
+  font-size: 16px;
   color: #627382;
 }
 
@@ -203,25 +195,28 @@
 
 /* card */
 .notes-card{
-  width: 25%;
-  background-color: #FBFBFB;
+  width: 50%;
+  background-color: #ffffff;
   border: 1px solid #E0E0E0;
   border-radius: 12px;
-  padding: 32px 24px;
+  padding: 24px;
   text-align: center;
-  transition: 0.3s;
+  
 }
 
 .notes-card:hover{
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  background-color: #30B868;
+  box-shadow: 0 12px 24px #627382;
 }
 
 /* icon */
 .notes-card img{
-  width: 36px;
-  height: 36px;
+  border-radius: 50%;
+  background-color: #f95555;
+  width: 45px;
+  height: 45px;
   margin-bottom: 16px;
+  padding: 10px;
 }
 
 /* title */
@@ -234,7 +229,7 @@
 
 /* text */
 .notes-card p{
-  font-size: 15px;
+  font-size: 14px;
   color: #627382;
   line-height: 22px;
 }
@@ -270,40 +265,42 @@
 /* text */
 .your-second-brain-text-right-side{
   width: 50%;
-  padding: 30px;
+  padding: 30px 0px;
 }
 
 /* tag */
 .first-p{
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 500;
   color: #30B868;
   margin-bottom: 12px;
+  padding-left: 0px;
 }
 
 /* headings */
 .first-h1{
-  font-size: 48px;
+  width: 700px;
+  font-size: 45px;
   font-weight: 700;
   color: #001931;
-  line-height: 1.2;
+  padding-left: 0px;
 }
 
 .second-h1{
-  font-size: 48px;
+  font-size: 45px;
   font-weight: 700;
-  color: #30B868;
-  line-height: 1.2;
+  color: #001931;
   margin-bottom: 20px;
+  padding-left: 0px;
 }
 
 /* paragraph */
 .second-p{
-  font-size: 18px;
+  font-size: 16px;
   color: #627382;
   line-height: 28px;
   margin-bottom: 32px;
+  padding-left: 0px;
 }
 
 /* list */
@@ -316,17 +313,18 @@
   font-size: 16px;
   color: #001931;
   margin-bottom: 14px;
-  padding-left: 22px;
+  padding-left: 0px;
   position: relative;
 }
 
 /* check icon */
-.brain-list li::before{
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #30B868;
-  font-weight: bold;
+.brain-list li{
+ color: #001931;
+ font-size: 16px;
+  font-weight: 500;
+  align-items: center;
+  display: flex;
+  
 }
 
 /* Ready to think more clearly section */
