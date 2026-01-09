@@ -1,111 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- this is head section -->
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KnowledgeVault-L1</title>
-  <!-- google font -->
+
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
-  <!-- External css -->
-  <link rel="stylesheet" href="./style.css">
-  <!-- font awseome cdn -->
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./style.css" />
 </head>
-<!-- this is body section -->
 
 <body>
+
+  <!-- ================= HEADER ================= -->
   <header>
 
-    <!-- navbar section -->
-    <section>
-      <nav>
-        <div class="navbar">
-          <!-- logo -->
-          <div class="logo">
-            <img src="./assets/logo-navbar.png" alt="">
-          </div>
-          <!-- menu part -->
-          <div class="ul">
-            <ul class="list-item">
-              <li> <a href="">Features</a></li>
-              <li><a href="">How It Works</a></li>
-              <li><a href="">Why It's Different</a></li>
-            </ul>
-          </div>
-          <!-- button part -->
-          <div>
-            <button class="btn">Get Early Access</button>
-          </div>
-        </div>
-      </nav>
-  </header>
-  </section>
-  <main>
-    <!-- banner/hero section -->
-    <section class="hero-section">
-      <div class="inner-hero">
-        <div class="inner-hero-first">
-          <img src="./assets/Group 5.png" alt="">
-          <p>Early Access Now Open</p>
-        </div>
-        <h1 class="heading-1">Structured Thinking,</h1>
-        <h1 class="heading-2">Not Just Note-Taking.</h1>
-        <p class="para">A private space to store notes, links, and learning summaries — designed to</p>
-        <p class="para">help you think clearly, connect ideas, and turn learning into long-term knowledge</p>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="main-nav">
+      <div class="navbar">
 
-        <div class="primary-button-2">
-          <button class="btn-2">Start Building Your Vault <i class="fa-solid fa-arrow-right"></i></button>
-          <button class="btn-3"><i class="fa-solid fa-play"></i> See How It Works</button>
+        <!-- Logo -->
+        <div class="logo">
+          <img src="./assets/logo-navbar.png" alt="Knowledge Vault Logo">
+        </div>
+
+        <!-- Menu -->
+        <ul class="nav-menu">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Why It's Different</a></li>
+        </ul>
+
+        <!-- CTA -->
+        <div class="nav-cta">
+          <button class="btn-primary">Get Early Access</button>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+  <!-- ================= HEADER END ================= -->
+
+
+  <main>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section">
+      <div class="hero-inner">
+
+        <!-- Badge -->
+        <div class="hero-badge">
+          <img src="./assets/Group 5.png" alt="">
+          <span>Early Access Now Open</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-title">
+          Structured Thinking,
+          <span>Not Just Note-Taking.</span>
+        </h1>
+
+        <!-- Description -->
+        <p class="hero-desc">
+          A private space to store notes, links, and learning summaries —
+          designed to help you think clearly, connect ideas,
+          and turn learning into long-term knowledge.
+        </p>
+
+        <!-- Actions -->
+        <div class="hero-actions">
+          <button class="btn-primary">
+            Start Building Your Vault <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+          <button class="btn-outline">
+            <i class="fa-solid fa-play"></i> See How It Works
+          </button>
+        </div>
+
+      </div>
+    </section>
+    <!-- ================= HERO END ================= -->
+
+
+    <!-- ================= NOTES SECTION ================= -->
+    <section class="notes-section">
+      <div class="notes-inner">
+
+        <div class="notes-header">
+          <h1>Notes don’t fail, Structure does.</h1>
+          <p>
+            You’re not bad at learning. Your tools just weren’t built
+            for how knowledge actually works.
+          </p>
+        </div>
+
+        <div class="notes-card-parent">
+
+          <div class="notes-card">
+            <img src="./assets/hero-bg.png" alt="">
+            <h2>Scattered notes</h2>
+            <p>
+              Your ideas live in 10 different apps,
+              none of them connected.
+            </p>
+          </div>
+
+          <div class="notes-card">
+            <img src="./assets/notes-1.png" alt="">
+            <h2>Bookmark overload</h2>
+            <p>
+              Hundreds of saved links you’ll never
+              revisit or remember.
+            </p>
+          </div>
+
+          <div class="notes-card">
+            <img src="./assets/notes-1.png" alt="">
+            <h2>No idea connections</h2>
+            <p>
+              Insights stay isolated, never
+              building into bigger understanding.
+            </p>
+          </div>
+
+          <div class="notes-card">
+            <img src="./assets/notes-1.png" alt="">
+            <h2>Forgetting what you learned</h2>
+            <p>
+              Knowledge fades because there’s
+              no system to retain it.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
-    <!-- notes section -->
-     <section class="notes-section ">
-      <h1 >Notes don't fail, Structure does.</h1>
-       <p>you're not bad at learning. Your tools just weren't built for how knowledge actually works.</p>
-      <div class="notes-card-parent">
-        <div class="notes-card">
-         
-       <h2>Scattered notes</h2>
-      <p>Your ideas live in 10 different apps,</p>
-      <p>none of them connected.</p>
-</div>
-        <div class="notes-card">
- <h2>Bookmark overload</h2>
-      <p>Hundreds of saved links you'll never </p>
-        <p>revisit or remember.</p>
-</div>
-        <div class="notes-card">
-        
-         <h2>No idea connections</h2>
-      <p>Insights stay isolated, never </p>
-        <p>building into bigger understanding.</p>
-</div>
-        <div class="notes-card">
-       <h2>Forgetting what
-you learned</h2>
-      <p>Knowledge fades because there's </p>
-        <p>no system to retain it.</p>
-</div>
+    <!-- ================= NOTES END ================= -->
+
+
+    <!-- ================= SECOND BRAIN SECTION ================= -->
+    <section class="you-second-brain-section">
+      <div class="inner-you-second-brain-section">
+
+        <div class="your-second-brain-image">
+          <img src="./assets/knowledge.png" alt="Knowledge illustration">
+        </div>
+
+        <div class="your-second-brain-text-right-side">
+          <p class="first-p">THE SOLUTION</p>
+
+          <h1 class="first-h1">Your Second Brain,</h1>
+          <h1 class="second-h1">Structured by Design</h1>
+
+          <p class="second-p">
+            Personal Knowledge Vault isn’t another note-taking app.
+            It’s a thinking environment where every note, link, and summary
+            becomes part of an interconnected web of understanding.
+          </p>
+
+          <ul class="brain-list">
+            <li>Capture ideas with structure built-in from day one</li>
+            <li>Connect related concepts automatically as you write</li>
+            <li>Build lasting knowledge through reflection prompts</li>
+            <li>Find anything instantly with semantic search</li>
+          </ul>
+        </div>
+
       </div>
-     </section>
+    </section>
+    <!-- ================= SECOND BRAIN END ================= -->
+
+
+    <!-- ================= CTA SECTION ================= -->
+    <section class="cta-section">
+      <div class="cta-inner">
+
+        <h1>Ready to think more clearly?</h1>
+
+        <p class="cta-desc">
+          Join thousands of learners who are building their personal knowledge vaults.
+          Start free — no credit card required.
+        </p>
+
+        <button class="btn-primary">
+          Start Building Your Vault <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p class="cta-note">
+          Free during early access • No credit card needed
+        </p>
+
+      </div>
+    </section>
+    <!-- ================= CTA END ================= -->
+
   </main>
 
 
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
 
+    <div class="footer-top">
 
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="./assets/logo-navbar.png" alt="Knowledge Vault Logo">
+      </div>
 
+      <!-- Social -->
+      <div class="footer-social">
+        <h3>Social Links</h3>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
 
+    </div>
 
+    <div class="footer-bottom">
+      <p>© 2026 Personal Knowledge Vault. All rights reserved.</p>
+    </div>
+
+  </footer>
+  <!-- ================= FOOTER END ================= -->
 
 </body>
-
 </html>

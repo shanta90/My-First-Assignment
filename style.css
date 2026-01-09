@@ -1,172 +1,437 @@
-/* universal selector */
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-/* navbar section */
-nav {
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+/* main nav wrapper */
+.main-nav{
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+/* navbar container */
+.navbar{
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 16px 120px;
-}
-.logo img {
-  width: 139px;
-  height:60px ;
-}
-.ul {
-  width: 365px;
-  height: 24px; 
-}
-.list-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
+.logo img{
+  width: 140px;
+  height: auto;
+}
+
+/* menu list */
+.nav-menu{
+  display: flex;
+  list-style: none;
   gap: 32px;
 }
-.list-item li{
-  list-style-type:none;
-  
+
+/* menu links */
+.nav-menu li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #001931;
+  transition: 0.2s;
 }
-.list-item li a{
-text-decoration: none;
- color: #000000;
- font-size: 16px;
- font-weight: 500;
+
+.nav-menu li a:hover{
+  color: #30B868;
 }
-.btn {
-  width: 164px;
-  height: 44px;
-  padding: 12px 16px;
+
+/* call to action button */
+.btn-primary{
+  padding: 12px 20px;
   background-color: #30B868;
   border: none;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.2s;
 }
-.btn:hover  {
+
+.btn-primary:hover{
   background-color: #FF4D4D;
 }
-/* hero section */
-.hero-section {
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero-section{
   width: 100%;
-  height: 674px;
+  height: 680px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("./assets/hero-bg.png");
-  background-size: contain;
-  background-position: center;
+  background-image: url("./assets/hero-bg.png");
   background-repeat: no-repeat;
- 
+  background-position: center;
+  background-size: contain;
 }
-.inner-hero {
+
+/* hero container */
+.hero-inner{
   width: 80%;
-  height: 379px;
+  max-width: 1100px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-
 }
-.inner-hero-first {
+
+/* badge */
+.hero-badge{
   display: flex;
-  justify-items: center;
-  align-items: center ;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 8px 12px;
-  border-radius: 1000px;
+  align-items: center;
+  gap: 8px;
   background-color: #FBFBFB;
   color: #30B868;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 999px;
+  margin-bottom: 24px;
 }
-.heading-1 {
+
+/* headline */
+.hero-title{
   font-size: 72px;
-  font-weight: bold;
-  color: #FFFFFF
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 16px;
 }
-.heading-2 {
-    font-size: 72px;
-  font-weight: bold;
-  color: #30B868
+
+/* highlighted line */
+.hero-title span{
+  color: #30B868;
+  display: block;
 }
- .para {
+
+/* description */
+.hero-desc{
   font-size: 18px;
-  font-weight: 400;
-  font-weight: normal;
-  color: #FFFFFF;
-  line-height: 24px;
-}
-.btn-1 {
- padding: 12px 16px;
- width: 251px;
- height: 52px;
+  color: #ffffff;
+  max-width: 820px;
+  line-height: 26px;
+  margin-bottom: 32px;
 }
 
-.btn-2{
-  background-color: #30B868;
-  color: #FBFBFB;
-  padding: 12px 16px;
-  font-size: 16px;
-  font-weight: 500;
-  border: none;
-  border-radius: 4px;
+/* actions */
+.hero-actions{
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
-.btn-3 {
+
+/* outline button */
+.btn-outline{
   background-color: transparent;
-  color: #FBFBFB;
-  padding: 12px 16px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 12px 20px;
   font-size: 16px;
   font-weight: 500;
-  border: 1px solid #FBFBFB;
-  border-radius: 4px
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
 
+.btn-outline:hover{
+  background-color: #FF4D4D;
+  border-color: #FF4D4D;
 }
-.btn-2:hover  {
-  background-color: #FF4D4D
-}
-.btn-3:hover  {
-  background-color: #FF4D4D
-}
-.primary-button-2 {
-  gap: 10px;
+
+
+/* ================= NOTES SECTION ================= */
+
+.notes-section{
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 32px;
+  padding: 120px 0;
 }
 
-.notes-section h1 {
+.notes-inner{
+  width: 80vw;
+}
+
+/* header */
+.notes-header{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.notes-header h1{
   font-size: 48px;
   font-weight: 700;
   color: #001931;
+  margin-bottom: 12px;
 }
-.notes-section p {
-  font-size: 16px;
-  font-weight: normal;
+
+.notes-header p{
+  font-size: 18px;
   color: #627382;
-  height: 20px;
- ;
 }
-.notes-card-parent {
+
+/* cards wrapper */
+.notes-card-parent{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* card */
+.notes-card{
+  width: 25%;
+  background-color: #FBFBFB;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.notes-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+/* icon */
+.notes-card img{
+  width: 36px;
+  height: 36px;
+  margin-bottom: 16px;
+}
+
+/* title */
+.notes-card h2{
+  font-size: 22px;
+  font-weight: 600;
+  color: #001931;
+  margin-bottom: 10px;
+}
+
+/* text */
+.notes-card p{
+  font-size: 15px;
+  color: #627382;
+  line-height: 22px;
+}
+
+
+/* ================= YOU SECOND BRAIN SECTION ================= */
+
+.you-second-brain-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 120px 0;
+}
+
+.inner-you-second-brain-section{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* image */
+.your-second-brain-image{
+  width: 50%;
+}
+
+.your-second-brain-image img{
+  width: 100%;
+  height: auto;
+}
+
+/* text */
+.your-second-brain-text-right-side{
+  width: 50%;
+  padding: 30px;
+}
+
+/* tag */
+.first-p{
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #30B868;
+  margin-bottom: 12px;
+}
+
+/* headings */
+.first-h1{
+  font-size: 48px;
+  font-weight: 700;
+  color: #001931;
+  line-height: 1.2;
+}
+
+.second-h1{
+  font-size: 48px;
+  font-weight: 700;
+  color: #30B868;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* paragraph */
+.second-p{
+  font-size: 18px;
+  color: #627382;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+
+/* list */
+.brain-list{
+  list-style: none;
+  padding: 0;
+}
+
+.brain-list li{
+  font-size: 16px;
+  color: #001931;
+  margin-bottom: 14px;
+  padding-left: 22px;
+  position: relative;
+}
+
+/* check icon */
+.brain-list li::before{
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #30B868;
+  font-weight: bold;
+}
+
+
+
+
+
+
+/* Ready to think more clearly section=========================================== */
+/* ================= CTA SECTION ================= */
+.cta-section {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-inner {
+  width: 90%;
+  max-width: 1100px;
+  background-color: #F7F6F2;
+  border-radius: 16px;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.cta-inner h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #001931;
+  margin-bottom: 16px;
+}
+
+.cta-desc {
+  font-size: 18px;
+  color: #627382;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+
+.cta-note {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #7a8a99;
+}
+
+/* button reuse */
+.cta-inner .btn-2 {
+  margin-top: 8px;
+}
+
+
+
+
+
+
+/* ========================================================= */
+/* footer section start =============================== */
+/* footer section */
+.site-footer {
+  width: 100%;
+  background-color: #001931;
+  color: #ffffff;
+  padding: 60px 120px 30px;
+  font-size: 16px;
+}
+
+/* top part */
+.footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 30px;
+  margin-bottom: 20px;
 }
-.notes-card-parent .notes-card h2 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #001931;
+
+.footer-logo img {
+  width: 140px;
 }
-.notes-card-parent .notes-card p {
-  font-size: 16px;
-  font-weight: normal;
-  color: #627382;
+
+/* social */
+.footer-social h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: #30B868;
+}
+
+/* bottom part */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #d1d1d1;
 }
