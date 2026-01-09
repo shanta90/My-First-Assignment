@@ -51,7 +51,7 @@ text-decoration: none;
   font-weight: 600;
   color: #FFFFFF;
 }
-.btn:hover {
+.btn:hover  {
   background-color: #FF4D4D;
 }
 /* hero section */
@@ -65,6 +65,7 @@ text-decoration: none;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+ 
 }
 .inner-hero {
   width: 80%;
@@ -73,6 +74,7 @@ text-decoration: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .inner-hero-first {
   display: flex;
@@ -97,20 +99,74 @@ text-decoration: none;
 }
  .para {
   font-size: 18px;
+  font-weight: 400;
   font-weight: normal;
   color: #FFFFFF;
+  line-height: 24px;
 }
 .btn-1 {
-  
-  padding: 12px 16px;
-  
-  width: 251px;
-  height: 52px;
+ padding: 12px 16px;
+ width: 251px;
+ height: 52px;
 }
-.inner-hero-second {
+
+.btn-2{
   background-color: #30B868;
+  color: #FBFBFB;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
   border-radius: 4px;
+}
+.btn-3 {
+  background-color: transparent;
+  color: #FBFBFB;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #FBFBFB;
+  border-radius: 4px
+
+}
+.btn-2:hover  {
+  background-color: #FF4D4D
+}
+.btn-3:hover  {
+  background-color: #FF4D4D
+}
+.primary-button-2 {
+  gap: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 32px;
+}
+
+.notes-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #001931;
+}
+.notes-section p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #627382;
+  height: 20px;
+ ;
+}
+.notes-card-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notes-card-parent .notes-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #001931;
+}
+.notes-card-parent .notes-card p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #627382;
 }
