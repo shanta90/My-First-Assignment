@@ -163,7 +163,7 @@
 }
 
 
-/* ================= NOTES SECTION ================= */
+/*  NOTES SECTION */
 
 .notes-section{
   width: 100%;
@@ -240,7 +240,7 @@
 }
 
 
-/* ================= YOU SECOND BRAIN SECTION ================= */
+/*  SECOND BRAIN SECTION  */
 
 .you-second-brain-section{
   width: 100%;
@@ -329,13 +329,8 @@
   font-weight: bold;
 }
 
-
-
-
-
-
-/* Ready to think more clearly section=========================================== */
-/* ================= CTA SECTION ================= */
+/* Ready to think more clearly section */
+/* CTA SECTION  */
 .cta-section {
   width: 100%;
   padding: 100px 0;
@@ -348,20 +343,20 @@
   width: 90%;
   max-width: 1100px;
   background-color: #F7F6F2;
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 80px 40px;
   text-align: center;
 }
 
 .cta-inner h1 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   color: #001931;
   margin-bottom: 16px;
 }
 
 .cta-desc {
-  font-size: 18px;
+  font-size: 16px;
   color: #627382;
   line-height: 28px;
   margin-bottom: 32px;
@@ -369,8 +364,8 @@
 
 .cta-note {
   margin-top: 16px;
-  font-size: 14px;
-  color: #7a8a99;
+  font-size: 16px;
+  color: #627382;
 }
 
 /* button reuse */
@@ -380,11 +375,7 @@
 
 
 
-
-
-
-/* ========================================================= */
-/* footer section start =============================== */
+/* footer section start  */
 /* footer section */
 .site-footer {
   width: 100%;
@@ -411,7 +402,8 @@
 /* social */
 .footer-social h3 {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .social-icons {
@@ -426,12 +418,16 @@
 }
 
 .social-icons i:hover {
-  color: #30B868;
+  color: #FF4D4D;
 }
 
 /* bottom part */
 .footer-bottom {
   text-align: center;
-  font-size: 14px;
-  color: #d1d1d1;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fafafa;
+}
+.footer-bottom hr {
+  border: none;
 }
